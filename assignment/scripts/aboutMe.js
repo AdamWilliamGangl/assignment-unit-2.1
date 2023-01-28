@@ -102,11 +102,6 @@ switch (luckyNumber) {
         console.log('Luck is what happens when preparation meets opportunity');
 }
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
-let result;
-if (adventurous) {
-    result = 'Adventures are great!';
-}
-else {
-    result = 'How about we stay home?';
-}
+let result=
+(adventurous) ? "Adventures are great!" : "How about we stay home?"
 console.log(result);
