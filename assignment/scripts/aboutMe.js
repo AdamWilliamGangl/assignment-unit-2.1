@@ -56,13 +56,14 @@ if (luckyNumber === 2 && adventurous) {
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 if (pets < allowedPets) {
-    console.log('I can have more pets!')}
-    else if (pets === allowedPets) {
-        console.log('I have enogh pets')
-    }
-    else if (pets > allowedPets) {
-        console.log('Oh no, I have too many pets!')
-    }
+    console.log('I can have more pets!')
+}
+else if (pets === allowedPets) {
+    console.log('I have enogh pets')
+}
+else if (pets > allowedPets) {
+    console.log('Oh no, I have too many pets!')
+}
 
 
 // STRETCH GOALS:
@@ -72,11 +73,12 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
-let mostPets= 0
-if (pets > friendsPets){
-mostPets= pets;}
+let mostPets = 0
+if (pets > friendsPets) {
+    mostPets = pets;
+}
 else {
-    mostPets= friendsPets
+    mostPets = friendsPets
 }
 console.log('The person with the most pets, has a total of', mostPets, 'pets.')
 
@@ -86,7 +88,19 @@ console.log('The person with the most pets, has a total of', mostPets, 'pets.')
 //      "Third is the one with the polka dot dress" if your lucky number is 3
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
-
+switch (luckyNumber) {
+    case 1:
+        console.log('First is the worst.');
+        break;
+    case 2:
+        console.log('Second is the best.');
+        break;
+    case 3:
+        console.log ('Third is the one with the polka dot dress.');
+        break;
+        default:
+            console.log('Luck is what happens when preparation meets opportunity');
+}
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
 
